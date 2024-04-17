@@ -1,0 +1,53 @@
+<!-- activity_main.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="ru.mirea.khrebtovsky.thread.MainActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/totalPairsEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:hint="Total Pairs"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/totalDaysEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalPairsEditText"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Total Days"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonMirea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalDaysEditText"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Calculate" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonMirea"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="" />
+
+    </RelativeLayout>
+</layout>
